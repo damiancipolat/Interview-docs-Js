@@ -21,6 +21,18 @@ es un estilo de arquitectura para diseñar aplicaciones en red.
 
 Más comunmente usados.
 
+#### Respuestas satisfactorias: 
+
+#### ERRORES Cliente: 
+
+| Codigo   | Definicion                   |
+|---------|------------------------------|
+| 400 Bad Request | This response means that server could not understand the request due to invalid syntax. |
+| 401 Unauthorized | Authentication is needed to get requested response. This is similar to 403, but in this case, authentication is possible |
+| 403 Forbidden | Client does not have access rights to the content so server is rejecting to give proper response. |
+| 404 Not Found | Server can not find requested resource. This response code probably is most famous one due to its frequency to occur in web. |
+
+
 #### ERRORES Servidor: 
 
 | Codigo   | Definicion                   |
