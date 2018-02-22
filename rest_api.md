@@ -1,6 +1,6 @@
-##Rejunte documentación sobre Api-Rest y HTTP
+## Rejunte documentación sobre Api-Rest y HTTP
 
-### Arquitectura REST:
+#### Arquitectura REST:
 REST, abreviatura de **Representational State Transfer, o Transferencia de Estado Representacional**
 es un estilo de arquitectura para diseñar aplicaciones en red.
 
