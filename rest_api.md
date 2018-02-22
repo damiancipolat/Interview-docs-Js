@@ -19,7 +19,9 @@ es un estilo de arquitectura para diseñar aplicaciones en red.
 
 #### Http codigos de estado:
 
-#### ERRORES Servidor: (Más comunes)
+Más comunmente usados.
+
+#### ERRORES Servidor: 
 
 | Codigo   | Definicion                   |
 |---------|------------------------------|
