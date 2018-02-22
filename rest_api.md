@@ -25,7 +25,7 @@ Más comunmente usados.
 
 | Codigo   | Definicion                   |
 |---------|------------------------------|
-| 200 OK | TLa solicitud ha tenido éxito.  |
+| 200 OK | La solicitud ha tenido éxito.  |
 | 202 Accepted | La solicitud se ha recibido, pero aún no se ha actuado. Es una petición "Sin compromiso", lo que significa que no hay manera en HTTP que permita enviar una respuesta asíncrona que indique el resultado del procesamiento de la solicitud. |
 | 201 Created| La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello. Ésta es típicamente la respuesta enviada después de una petición PUT. |
 
