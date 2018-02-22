@@ -5,10 +5,10 @@ REST, abreviatura de **Representational State Transfer, o Transferencia de Estad
 es un estilo de arquitectura para diseñar aplicaciones en red.
 
 #### Verbos http:
-| Verbo   | Definicion                                                                                                                                                   |
-|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GET     | El método GET,solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.                        |
-| HEAD    | El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.                                                     |   |   |   |
+| Verbo   | Definicion                                                                                                                                                   |      Ejemplo de uso        |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| GET     | El método GET,solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.                        | Consultar datos de un producto http://tusitio.com/producto/12ae324
+| HEAD    | El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.                                                     | Como es similar a get pero sin respuesta podemos usarlo para consultar si algun recurso esta habilitado. http://tusitio.com/producto/12ae324/token/rewrwer12312dasdas= solo trabajamos con http codes y nos ahorramos el response completo en caso de que no se apruebe al auth.  |
 | POST    | El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor. |
 | PUT     | El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.                                           |
 | DELETE  | El método DELETE borra un recurso en específico.                                                                                                             |
