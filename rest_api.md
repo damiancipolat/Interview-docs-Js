@@ -17,7 +17,18 @@ es un estilo de arquitectura para diseñar aplicaciones en red.
 | TRACE   | El método TRACE realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.                                                |
 | CONNECT | El método CONNECT establece un tunel hacia el servidor identificado por el recurso.                                                                          |
 
-Links:
+#### Http codigos de estado:
+
+#### ERRORES Servidor: (Más comunes)
+
+| Codigo   | Definicion                   |
+|---------|------------------------------|
+| 500 Internal Server Error | The server has encountered a situation it doesn't know how to handle. |
+| 501 Not Implemented | The request method is not supported by the server and cannot be handled. The only methods that servers are required to support (and therefore that must not return this code) are GET and HEAD. |
+| 502 Bad Gateway | This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response. | 
+| 503 Service Unavailable | The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. |
+
+Links referencia:
 - Documentación mozilla **[Http methods]**
 - Documentación mozilla **[Http status codes]**
 
