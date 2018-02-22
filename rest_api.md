@@ -12,12 +12,14 @@ es un estilo de arquitectura para diseñar aplicaciones en red.
 | POST    | El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor. | Lo usamos cuando queremos **crear** una nueva entidad, por ejemplo post y guardar un nuevo producto. |
 | PUT     | El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.                                           | Put es similar a post, el request tiene un body pero se usa cuando queremos **crear o actualizar**.|
 | DELETE  | El método DELETE borra un recurso en específico.                                                                                                             | Se usa para borrar una entidad http://tusitio.com/delete/product/12abced |
-| OPTIONS | El método OPTIONS es utilizado para describir las opciones de comunicación para el recurso de destino.                                                       | Es un preflight request, se usa en api rest para saber si un dominio es accesible y el cliente y cumple CORS. |
-| PATCH   | El método PATCH,es utilizado para aplicar modificaciones parciales a un recurso.                                                                             |
-| TRACE   | El método TRACErealiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.                                                |
+| OPTIONS | El método OPTIONS es utilizado para describir las opciones de comunicación para el recurso de destino.                                                       | Es un preflight request, se usa en api rest para saber si un dominio es accesible y cumple CORS. |
+| PATCH   | El método PATCH,es utilizado para aplicar modificaciones parciales a un recurso.                                                                             | Es como **PUT** se usa solo para hacer modificaciones de un recurso. |
+| TRACE   | El método TRACE realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.                                                |
 | CONNECT | El método CONNECT establece un tunel hacia el servidor identificado por el recurso.                                                                          |
 
 Links:
 - Documentación mozilla **[Http methods]**
+- Documentación mozilla **[Http status codes]**
 
 [Http methods]:https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+[Http status codes]:https://restpatterns.mindtouch.us/HTTP_Status_Codes
