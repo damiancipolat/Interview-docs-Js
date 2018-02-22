@@ -57,6 +57,8 @@ Devuelve un objeto Promise que es rechazado con la razón dada.
 Devuelve un objeto Promise que es resuelto con el valor dado. Si el valor es un thenable (p.ej. tiene un método then), la promesa devuelta "seguirá" este thenable, adoptando su eventual estado; de lo contrario la promesa devuelta será cumplida con el valor. Generalmente, si se quiere saber si un valor es una promesa o no, se podría usar - Promise.resolve(value) y trabajar con el valor devuelto como una promesa.
 
 ```js
+
+//Ejemplo simple de promise.
 const saludar = (nombre)=>{
   
   return new Promise((resolve,reject)=>{
@@ -78,4 +80,68 @@ const saludar = (nombre)=>{
   }); 
 
 }
+
+//Concatenar promises.
+const testProm = (nombre,raiz)=>{
+  
+  return new Promise((resolve,reject)=>{
+
+    try {
+
+        setTimeout(()=>resolve(raiz),5000);
+
+    } catch(err){
+          reject(err);
+    }
+
+
+  }); 
+
+}
+
+//Armo una promise y encadeno las resuestas, se pasa la salida de un then al otro.
+let p = testProm('damian',10).then((val)=>val+2).
+                             .then((val)=>console.log('got',val))
+                             .catch((err)=>console.log('error',err));
+
 ```
+
+### GENERATORS:
+
+A generator is a special type of function that can be entered and exited a number of times. 
+You might hear people describe it as, “a function that can be paused”.
+
+#### Creación:
+
+// standard function
+function standardFunc() {
+
+  console.log('The oscar for best picture goes to...');
+  console.log('La La Land');
+  console.log('There\'s been a mistake...')
+  console.log('The best picture is MoonLight.');
+
+}
+
+// generator function
+function* generatorFunc() {
+  
+ console.log('The oscar for best picture goes to...');
+ console.log('La La Land');
+
+ //Fija el pto de pausa de la función.
+ yield 'WAIT!!!';
+
+ console.log('There\'s been a mistake...')
+ console.log('The best picture is MoonLight.');
+
+}
+
+//Traigo el generador.
+const genFunc = generatorFunc();
+
+//Ejecuto la función.
+genFunc.next();
+
+//Pauso la funciín.
+genFunc.next();
