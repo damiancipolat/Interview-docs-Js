@@ -113,6 +113,8 @@ You might hear people describe it as, “a function that can be paused”.
 
 #### Creación:
 
+```js
+
 // standard function
 function standardFunc() {
 
@@ -143,5 +145,6 @@ const genFunc = generatorFunc();
 //Ejecuto la función.
 genFunc.next();
 
-//Pauso la funciín.
+//Pauso la funcion.
 genFunc.next();
+```
