@@ -12,11 +12,27 @@ Si tiene como referencia a null ese nodo es una hoja.
 **Arbol espejado**
 Es un arbol binario es espejo con otro si tienen la misma forma pero en sentido inverso, simeticro como si fuera visto por un espejo.
 
+```js
 
-     A
-+-----------+     
-|						|
-B 					C
-|       +-------+
-D 			|       |
-				E 			F
+class Nodo{
+ 	String valor;
+ 	Nodo izq, der;
+}
+
+boolean espejos(Nodo x, Nodo y) {
+
+ // Caso dos árboles vacíos
+ if( x==null && y==null)
+ return true;
+
+ // Caso un árbol vacío
+ if( x==null || y==null )
+ return false;
+
+ // Caso ningún árbol vacío
+ return x.valor.equals(y.valor)&&espejos(x.izq, y.der)&& espejos(x.der, y.izq);
+
+} 
+
+
+```
