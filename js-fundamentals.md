@@ -44,16 +44,16 @@ new Promise((resolver,rechazar)=>{
 
 ```
 
-#### Promise.all(iterable):
+### Promise.all(iterable):
 Devuelve una de dos promesas, una que se cumple cuando todas las promises se cumplen y una cuando hay alguna que no se cumpla.
 
 #### Promise.race(iterable):
 Devuelve una promesa que se cumple o rechaza tan pronto como una de las promesas del iterable se cumple o rechaza, con el valor o razón de esa promesa.
 
-####Promise.reject(reason):
+#### Promise.reject(reason):
 Devuelve un objeto Promise que es rechazado con la razón dada.
 
-####Promise.resolve(value):
+#### Promise.resolve(value):
 Devuelve un objeto Promise que es resuelto con el valor dado. Si el valor es un thenable (p.ej. tiene un método then), la promesa devuelta "seguirá" este thenable, adoptando su eventual estado; de lo contrario la promesa devuelta será cumplida con el valor. Generalmente, si se quiere saber si un valor es una promesa o no, se podría usar - Promise.resolve(value) y trabajar con el valor devuelto como una promesa.
 
 ```js
