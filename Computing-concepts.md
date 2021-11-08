@@ -11,3 +11,9 @@ Signfica que una transacción no puede ser leida ni manipulada por otra.
 
 -Durability:
 Significa que la transaccion es completa y sus resultados seran persistidos.
+
+## Concurrencia:
+Se refiere a la capacidad de un CPU de ejecutar diversos procesos al mismo tiempo, estos procesos son independientes.
+
+## Paralelismo:
+Se refiere a poder ejecutar un proceso pero separarlo en partes se basa en **divide y venceras** que se ejecuta cada una a la vez aqui se relaciona con concurrencia.
