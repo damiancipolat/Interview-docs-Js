@@ -1,1 +1,6 @@
+**Orden de como se encolan**
 
+1) process.nextTick()
+2) Promise.resolve()
+3) setTimeout
+4) setInmediate
