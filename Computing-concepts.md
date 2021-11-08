@@ -19,4 +19,5 @@ Se refiere a poder ejecutar un proceso pero separarlo en partes se basa en **div
 
 - **MTTR (Mean time to resolve)**: El MTTR se calcula utilizando el tiempo promedio que lleva realizar una reparación después de que se haya producido la falla.
 
-#### POST MORTEM: Documento que habla del incidente, que se puede aprender y dar visibilidad del incidente, se debe prevenir para que no vuelva a suceder.
+#### POST MORTEM:
+Documento que habla del incidente, que se puede aprender y dar visibilidad del incidente, se debe prevenir para que no vuelva a suceder.
