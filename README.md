@@ -13,4 +13,4 @@ Links a la documentación:
 [Qeue pattern]:https://github.com/damiancipolat/Interview-docs-Js/blob/master/qeue_pattern.md
 [Js fundamental]:https://github.com/damiancipolat/Interview-docs-Js/blob/master/js-fundamentals.md
 [Nodejs Core]:https://github.com/damiancipolat/Interview-docs-Js/edit/master/Nodejs-Core
-[Computing concepts]:https://github.com/damiancipolat/Interview-docs-Js/edit/master/Computing-concepts
+[Computing concepts]:https://github.com/damiancipolat/Interview-docs-Js/edit/master/Computing-concepts.md
